@@ -1,4 +1,4 @@
-# SerialInstance
+# SerializeInstance
 A way to truly serialize & deserialize instance objects in NodeJS.
 
 Don't you wish you could serialize an instance of a class into a string
@@ -10,13 +10,10 @@ This library does just that.
 ## Installation
 
 ```bash
-npm install --save serialize-instance
-```
+$ npm install --save serialize-instance
 
-or
-
-```bash
-yarn add serialize-instance
+// or
+$ yarn add serialize-instance
 ```
 
 
@@ -47,25 +44,6 @@ obj.constructor === deserialized.constructor // TRUE
 - The constructor of all instances to be serialized must be exported from their modules.
 - The constructor of an instance must not be defined in the entry file.
 
-Basically do **NOT** do this:
-
-```JS
-// index.js
-
-class A {
-    constructor(data) {
-        this.data = data;
-    }
-}
-
-let a = new A();
-
-Serializer.serialize(a);
-```
-
-The above code may serialize but will most definitely fail at
-deserialization.
-
 ### Reasons
 
 This library depends on a `WeakMap` populated from node's `require.cache`
@@ -78,18 +56,12 @@ the constructor must be accessible in `require.cache`
 ## Warning
 
 This was mostly just a proof of concept and is currently being used in
-development for very narrow case of serializing a few objects with `Buffer`s
+development for a very narrow case of serializing a few objects with `Buffer`s
 and `Date`s to redis cache.
 
-Use this library at own risk.
-
-
-
-## Tests
-Real programmers don't write tests.
+Use this library at your own risk.
 
 
 
 ## License
-MIT.
-Go crazy with it. ;)
+MIT

@@ -1,6 +1,6 @@
 {
   "name": "serialize-instance",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A way to truly serialize & deserialize instance objects in NodeJS",
   "keywords": ["node.js", "serialization", "serialize", "deserialize", "deserialization", "instances", "type"],
   "main": "./dist/Serializer.js",
