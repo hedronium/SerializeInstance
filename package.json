@@ -1,7 +1,8 @@
 {
   "name": "serialize-instance",
-  "version": "1.0.2",
-  "description": "A way to truely serialize & deserialize instance objects in NodeJS",
+  "version": "1.0.4",
+  "description": "A way to truly serialize & deserialize instance objects in NodeJS",
+  "keywords": ["node.js", "serialization", "serialize", "deserialize", "deserialization", "instances", "type"],
   "main": "./dist/Serializer.js",
   "author": "Omran Jamal <o.jamal97@gmail.com>",
   "license": "MIT",

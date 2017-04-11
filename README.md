@@ -1,5 +1,5 @@
 # SerialInstance
-A way to truly serialize objects in NodeJS.
+A way to truly serialize & deserialize instance objects in NodeJS.
 
 Don't you wish you could serialize an instance of a class into a string
 and get a clone of the original object complete with all the methods
