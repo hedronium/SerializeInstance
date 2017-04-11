@@ -1,16 +1,17 @@
 {
   "name": "serialize-instance",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A way to truely serialize & deserialize instance objects in NodeJS",
   "main": "./dist/Serializer.js",
   "author": "Omran Jamal <o.jamal97@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prepublish": "./node_modules/.bin/tsc ."
+    "prepublish": "./node_modules/.bin/tsc"
   },
   "devDependencies": {
     "@types/node": "^7.0.12",
     "typescript": "^2.1.5"
   },
-  "repository": "git@github.com:Hedronium/SerializeInstance.git"
+  "repository": "git@github.com:Hedronium/SerializeInstance.git",
+  "files": ["dist/"]
 }
