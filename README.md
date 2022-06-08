@@ -31,7 +31,7 @@ let jsonified = JSON.stringify(serialized);  //JSON string
 
 // Deserialization
 let objectified = JSON.parse(jsonified);                //Generic Object
-let deserialized = Serializer.deserialize(objectified); //Instance object
+let deserialized = Serializer.unserialize(objectified); //Instance object
 
 
 obj.constructor === deserialized.constructor // TRUE
